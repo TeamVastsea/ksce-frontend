@@ -1,0 +1,26 @@
+{
+  "name": "KSCE - 苦力怕社区服务器",
+  "short_name": "KSCE",
+  "description": "欢迎来到苦力怕社区服务器(KSCE)！我们提供优质的Minecraft游戏体验，拥有完善的游戏规则和活跃的社区氛围。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/klpbbs-logo.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/klpbbs-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "zh-CN",
+  "scope": "/"
+}
