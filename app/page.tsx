@@ -8,6 +8,7 @@ import { AccountBindingSection } from "@/components/AccountBindingSection"
 import { ImageGallerySection } from "@/components/ImageGallerySection"
 import { SafetyRulesSection } from "@/components/SafetyRulesSection"
 import { TechContributorsSection } from "@/components/TechContributorsSection"
+import { OpenSourceSection } from "@/components/OpenSourceSection"
 import { Footer } from "@/components/Footer"
 
 export default function HomePage() {
@@ -23,6 +24,7 @@ export default function HomePage() {
       <ImageGallerySection />
       <SafetyRulesSection />
       <TechContributorsSection />
+      <OpenSourceSection />
       <Footer />
     </div>
   )
