@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog"
 import Image from "next/image"
 
 interface ImageModalProps {
@@ -29,6 +29,7 @@ export function ImageModal({ src, alt, width, height, className }: ImageModalPro
         </div>
       </DialogTrigger>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+        <DialogTitle className="sr-only">{alt}</DialogTitle>
         <div className="relative">
           <Image
             src={src || "/placeholder.svg"}
