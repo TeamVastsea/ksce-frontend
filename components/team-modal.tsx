@@ -83,7 +83,7 @@ export function TeamModal({ teamName, teamColor, captain, members, isRecruiting 
               <Badge variant="outline" className="mr-2">
                 队员
               </Badge>
-              队员名单 ({members.length}/5)
+              队员名单
             </h3>
             {members.length > 0 ? (
               <div className="space-y-3">

@@ -41,7 +41,7 @@ export function TeamsSection() {
                       <td className="px-6 py-4">
                         <div className="flex items-center justify-between">
                           <div className="space-y-1">
-                            <div className="text-sm text-gray-800">20名队员</div>
+                            <div className="text-sm text-gray-800">21名队员</div>
                             <div className="text-xs text-gray-500">点击查看详情</div>
                           </div>
                           <TeamModal
