@@ -48,25 +48,28 @@ function ServerConnectionInfo() {
               )}
             </Button>
           </div>
-          <div className="text-sm text-gray-600 mt-2">端口: 25565</div>
+          <div className="text-sm text-gray-600 mt-2">端口: 40012</div>
         </div>
         <div className="text-center p-4 bg-green-50 rounded-lg">
           <div className="font-bold text-green-800 mb-2">基岩版</div>
           <div className="text-sm text-gray-600 mb-1">服务器地址</div>
           <div className="flex items-center justify-center gap-2">
             <code className="text-sm bg-white px-2 py-1 rounded border">play.klpbbs.cn</code>
-            <Button
-              size="sm"
-              variant="ghost"
-              className="h-6 w-6 p-0"
-              onClick={() => copyToClipboard('play.klpbbs.cn', 'bedrock')}
-            >
-              {copiedBedrock ? (
-                <Check className="h-3 w-3 text-green-600" />
-              ) : (
-                <Copy className="h-3 w-3" />
-              )}
+            <Button size="sm" onClick={() => {window.location.href = "minecraft://?addExternalServer=苦力怕论坛模拟文明活动|play.klpbbs.cn:19132"}}>
+              导入游戏
             </Button>
+            {/*<Button*/}
+            {/*  size="sm"*/}
+            {/*  variant="ghost"*/}
+            {/*  className="h-6 w-6 p-0"*/}
+            {/*  onClick={() => copyToClipboard('play.klpbbs.cn', 'bedrock')}*/}
+            {/*>*/}
+            {/*  {copiedBedrock ? (*/}
+            {/*    <Check className="h-3 w-3 text-green-600" />*/}
+            {/*  ) : (*/}
+            {/*    <Copy className="h-3 w-3" />*/}
+            {/*  )}*/}
+            {/*</Button>*/}
           </div>
           <div className="text-sm text-gray-600 mt-2">端口: 19132</div>
         </div>
