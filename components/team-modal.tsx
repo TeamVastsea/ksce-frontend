@@ -16,7 +16,7 @@ import { Users } from "lucide-react"
 interface TeamMember {
   id: string
   uid: string
-  qq: string
+  qq?: string // 可选字段，仅队长使用
 }
 
 interface TeamModalProps {
@@ -93,7 +93,7 @@ export function TeamModal({ teamName, teamColor, captain, members, isRecruiting 
               <div className="space-y-3">
                 {members.map((member, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg p-4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="text-sm font-medium text-gray-600">游戏ID</label>
                         <div className="text-sm font-mono bg-white p-2 rounded border mt-1">{member.id}</div>
@@ -101,10 +101,6 @@ export function TeamModal({ teamName, teamColor, captain, members, isRecruiting 
                       <div>
                         <label className="text-sm font-medium text-gray-600">UID</label>
                         <div className="text-sm font-mono bg-white p-2 rounded border mt-1">{member.uid}</div>
-                      </div>
-                      <div>
-                        <label className="text-sm font-medium text-gray-600">QQ号</label>
-                        <div className="text-sm font-mono bg-white p-2 rounded border mt-1">{member.qq}</div>
                       </div>
                     </div>
                   </div>

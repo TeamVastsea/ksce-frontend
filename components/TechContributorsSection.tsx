@@ -30,7 +30,7 @@ export function TechContributorsSection() {
       contributions: ["拍摄", "视频剪辑", "测试"]
     },
     {
-      name: "CN_Dajichi",
+      name: "CN_DaJiChi",
       role: "直播",
       contributions: ["导播", "拍摄"]
     }
