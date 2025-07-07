@@ -38,6 +38,14 @@ export function OpenSourceSection() {
       tech: ["Java", "Spigot", "Paper"],
       icon: <Code className="w-6 h-6" />,
       repo: "TeamVastsea/CustomSpawn"
+    },
+    {
+      name: "PermSpawnpoint",
+      description: "一个基于权限组的出生点插件，适用于 Paper/Spigot/Bukkit 服务器",
+      features: ["权限组出生点", "多世界支持", "视角控制", "国际化支持"],
+      tech: ["Kotlin", "Paper", "Spigot", "Vault"],
+      icon: <Gamepad2 className="w-6 h-6" />,
+      repo: "SnowballXueQiu/PermSpawnpoint"
     }
   ]
 
