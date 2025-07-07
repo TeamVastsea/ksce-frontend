@@ -9,18 +9,12 @@ import { useState } from "react"
 
 function ServerConnectionInfo() {
   const [copiedJava, setCopiedJava] = useState(false)
-  const [copiedBedrock, setCopiedBedrock] = useState(false)
 
-  const copyToClipboard = async (text: string, type: 'java' | 'bedrock') => {
+  const copyToClipboard = async (text: string, type: 'java') => {
     try {
       await navigator.clipboard.writeText(text)
-      if (type === 'java') {
-        setCopiedJava(true)
-        setTimeout(() => setCopiedJava(false), 2000)
-      } else {
-        setCopiedBedrock(true)
-        setTimeout(() => setCopiedBedrock(false), 2000)
-      }
+      setCopiedJava(true)
+      setTimeout(() => setCopiedJava(false), 2000)
     } catch (err) {
       console.error('复制失败:', err)
     }
@@ -55,21 +49,9 @@ function ServerConnectionInfo() {
           <div className="text-sm text-gray-600 mb-1">服务器地址</div>
           <div className="flex items-center justify-center gap-2">
             <code className="text-sm bg-white px-2 py-1 rounded border">play.klpbbs.cn</code>
-            <Button size="sm" onClick={() => {window.location.href = "minecraft://?addExternalServer=苦力怕论坛模拟文明活动|play.klpbbs.cn:19132"}}>
+            <Button size="sm" onClick={() => { window.location.href = "minecraft://?addExternalServer=苦力怕论坛模拟文明活动|play.klpbbs.cn:19132" }}>
               导入游戏
             </Button>
-            {/*<Button*/}
-            {/*  size="sm"*/}
-            {/*  variant="ghost"*/}
-            {/*  className="h-6 w-6 p-0"*/}
-            {/*  onClick={() => copyToClipboard('play.klpbbs.cn', 'bedrock')}*/}
-            {/*>*/}
-            {/*  {copiedBedrock ? (*/}
-            {/*    <Check className="h-3 w-3 text-green-600" />*/}
-            {/*  ) : (*/}
-            {/*    <Copy className="h-3 w-3" />*/}
-            {/*  )}*/}
-            {/*</Button>*/}
           </div>
           <div className="text-sm text-gray-600 mt-2">端口: 19132</div>
         </div>
@@ -112,8 +94,8 @@ export function HeroSection() {
             </CardContent>
           </Card>
           <div className="mt-8 text-center">
-          <p className="text-sm text-gray-600 mb-4">从左上角起，顺时针依次为A、B、C、D队伍</p>
-        </div>
+            <p className="text-sm text-gray-600 mb-4">从左上角起，顺时针依次为A、B、C、D队伍</p>
+          </div>
         </div>
 
         <ServerConnectionInfo />
