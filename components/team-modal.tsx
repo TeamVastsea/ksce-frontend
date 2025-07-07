@@ -58,7 +58,7 @@ export function TeamModal({ teamName, teamColor, captain, members, isRecruiting 
             </h3>
             {!isRecruiting ? (
               <div className="bg-gray-50 rounded-lg p-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-gray-600">游戏ID</label>
                     <div className="text-sm font-mono bg-white p-2 rounded border mt-1">{captain.id}</div>
@@ -66,10 +66,6 @@ export function TeamModal({ teamName, teamColor, captain, members, isRecruiting 
                   <div>
                     <label className="text-sm font-medium text-gray-600">UID</label>
                     <div className="text-sm font-mono bg-white p-2 rounded border mt-1">{captain.uid}</div>
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium text-gray-600">QQ号</label>
-                    <div className="text-sm font-mono bg-white p-2 rounded border mt-1">{captain.qq}</div>
                   </div>
                 </div>
               </div>

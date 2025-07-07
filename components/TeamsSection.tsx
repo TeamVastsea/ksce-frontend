@@ -234,10 +234,7 @@ export function TeamsSection() {
                       <span className="text-sm text-gray-600">姓名:</span>
                       <span className="text-sm font-medium">Cloudlet_</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-600">QQ:</span>
-                      <span className="text-sm">291746302</span>
-                    </div>
+
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">UID:</span>
                       <span className="text-sm">200006</span>
@@ -262,13 +259,12 @@ export function TeamsSection() {
                   captain={{
                     id: "Cloudlet_",
                     uid: "200006",
-                    qq: "291746302",
                   }}
                   members={[
-                    { id: "Player_001", uid: "1000000001", qq: "1234567890" },
-                    { id: "Player_002", uid: "1000000002", qq: "1234567891" },
-                    { id: "Player_003", uid: "1000000003", qq: "1234567892" },
-                    { id: "Player_004", uid: "1000000004", qq: "1234567893" },
+                    { id: "Player_001", uid: "1000000001" },
+                    { id: "Player_002", uid: "1000000002" },
+                    { id: "Player_003", uid: "1000000003" },
+                    { id: "Player_004", uid: "1000000004" },
                   ]}
                 />
               </div>
@@ -295,10 +291,7 @@ export function TeamsSection() {
                       <span className="text-sm text-gray-600">姓名:</span>
                       <span className="text-sm font-medium">FuNainGer</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-600">QQ:</span>
-                      <span className="text-sm">2494585842</span>
-                    </div>
+
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">UID:</span>
                       <span className="text-sm">43497</span>
@@ -323,7 +316,6 @@ export function TeamsSection() {
                   captain={{
                     id: "FuNainGer",
                     uid: "43497",
-                    qq: "2494585842",
                   }}
                   members={[
                     { id: "BluePlayer_001", uid: "2000000001" },
@@ -356,10 +348,7 @@ export function TeamsSection() {
                       <span className="text-sm text-gray-600">姓名:</span>
                       <span className="text-sm font-medium">FoldedBaton3698</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-600">QQ:</span>
-                      <span className="text-sm">2604679110</span>
-                    </div>
+
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">UID:</span>
                       <span className="text-sm">417460</span>
@@ -384,7 +373,6 @@ export function TeamsSection() {
                   captain={{
                     id: "FoldedBaton3698",
                     uid: "417460",
-                    qq: "2604679110",
                   }}
                   members={[
                     { id: "GreenPlayer_001", uid: "3000000001" },
@@ -405,9 +393,7 @@ export function TeamsSection() {
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   <span>D组</span>
                 </CardTitle>
-                <Badge variant="outline" className="text-gray-600 border-gray-300">
-                  组建中
-                </Badge>
+                <Badge className="bg-green-100 text-green-800 hover:bg-green-200">已组建</Badge>
               </div>
             </CardHeader>
             <CardContent className="pt-0">
@@ -419,10 +405,7 @@ export function TeamsSection() {
                       <span className="text-sm text-gray-600">姓名:</span>
                       <span className="text-sm font-medium">RoundRacer71907</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-600">QQ:</span>
-                      <span className="text-sm">705185089</span>
-                    </div>
+
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">UID:</span>
                       <span className="text-sm">288954</span>
@@ -447,7 +430,6 @@ export function TeamsSection() {
                   captain={{
                     id: "RoundRacer71907",
                     uid: "288954",
-                    qq: "705185089",
                   }}
                   members={[
                     { id: "YellowPlayer_001", uid: "4000000001" },
